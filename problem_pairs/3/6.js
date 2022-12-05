@@ -2,12 +2,11 @@ const events = require('events');
 const fs = require('fs');
 const readline = require('readline');
 
-const problem_pair_number = 3;
 (async function processLineByLine() {
   try {
     const rl = readline.createInterface({
-      input: fs.createReadStream(`./problem_pairs/${problem_pair_number}/input.txt`),
-      // input: fs.createReadStream(`problem_pairs/${problem_pair_number}/test_input.txt`),
+      input: fs.createReadStream(`input.txt`),
+      // input: fs.createReadStream(`/test_input.txt`),
       crlfDelay: Infinity,
     });
 
